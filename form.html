@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>Form - HTML 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>HTML Form Element</h2>
+
+
+        <form name="fmhs" method="POST" action="proses.php">
+            <table item-width="50%">
+                <tr>
+                    <td> NIM : </td>
+                    <td>
+                        <input type="number" name="fnim">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Nama : </td>
+                    <td>
+                        <input type="text" name="fnama">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Tgl Lhr : </td>
+                    <td>
+                        <input type="date" name="fgllhr">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Prodi : </td>
+                    <td>
+                        <select name="fprodi">
+                            <option> Pilih </option>
+                            <option> S1 - Teknik Informatika </option>
+                            <option> S1 - Desain Komunikasi Visual </option>
+                            <option> S1 - Sistem Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Bidang Minat :</td>
+                    <td>
+                        <input type="checkbox" name="fb1" value="01">
+                        <label> Web Programming </label>
+
+                        <input type="checkbox" name="fb2" value="02">
+                        <label> Mobile Programming </label>
+
+                        <input type="checkbox" name="fb3" value="03">
+                        <label> Data Science </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Berkas CV :</td>
+                    <td>
+                        <input type="file" name="berkascv">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="hidden" name="fhidden" value="Rahasia"></td>
+                    <td>
+                        <input type="submit" name="fsubmit" value="Bagikan">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
